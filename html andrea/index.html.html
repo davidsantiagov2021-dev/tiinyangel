@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Perfil TiinyAngel</title>
+
+<!-- Fuente estilo GTA -->
+<link href="https://fonts.cdnfonts.com/css/pricedown" rel="stylesheet">
+<!-- Iconos -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+/* RESET */
+* {margin:0; padding:0; box-sizing:border-box;}
+
+/* CURSOR */
+body {
+    cursor: url('https://cdn-icons-png.flaticon.com/32/833/833472.png'), auto;
+}
+
+/* FONDO */
+body {
+    font-family: 'Pricedown', sans-serif;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9)),
+    url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee');
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    padding-top: 80px; /* espacio para menú fijo */
+}
+
+/* NAV */
+nav {
+    position: fixed;
+    top:0; left:0;
+    width:100%;
+    background: rgba(0,0,0,0.85);
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    padding:15px;
+    z-index:1000;
+}
+nav a {
+    color:white;
+    text-decoration:none;
+    font-size:20px;
+    transition:0.3s;
+}
+nav a:hover {color:#ff2d75;}
+
+/* HEADER */
+.header {text-align:center; margin-top:40px;}
+.name {font-size:80px;}
+.age {font-size:25px; color:#ff77aa;}
+
+/* SECCIONES */
+section {
+    padding:60px 20px;
+    opacity:0;
+    transform:translateY(50px);
+    transition:1s;
+}
+section.visible {opacity:1; transform:translateY(0);}
+
+/* BIO */
+.about {display:flex; justify-content:center; gap:40px; flex-wrap:wrap;}
+.about img {width:320px; border-radius:20px; transition:0.4s;}
+.about img:hover {transform:scale(1.05);}
+.bio-text {max-width:500px; font-size:22px; background:rgba(255,255,255,0.1); padding:20px; border-radius:15px;}
+
+/* GALERÍA */
+.gallery {display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:15px;}
+.gallery img {width:100%; border-radius:15px; transition:0.4s;}
+.gallery img:hover {transform:scale(1.08);}
+
+/* CARDS */
+.card {background:rgba(255,255,255,0.1); padding:20px; border-radius:15px;}
+.list-item {margin:10px 0;}
+
+/* REDES */
+.social {text-align:center;}
+.social i {font-size:30px; margin:10px; transition:0.3s;}
+.social i:hover {color:#ff2d75; transform:scale(1.2);}
+
+/* FOOTER */
+footer {text-align:center; padding:20px; background:rgba(0,0,0,0.8); margin-top:40px; font-size:14px;}
+
+/* RESPONSIVE */
+@media(max-width:768px){.name{font-size:50px;}}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+<a href="#bio">Bio</a>
+<a href="#gallery">Galería</a>
+<a href="#goals">Metas</a>
+<a href="#tippers">Tippers</a>
+<a href="#social">Redes</a>
+</nav>
+
+<!-- HEADER -->
+<div class="header">
+<div class="name">TIINYANGEL</div>
+<div class="age">37 años • Online 💚</div>
+</div>
+
+<!-- BIO -->
+<section id="bio">
+<div class="about">
+    <img src="DSC09965.jpg">
+    <div class="bio-text">
+        Soy una mezcla de misterio y deseo 🔥  
+        Me encanta provocar, jugar y conectar contigo 💕  
+        Cada momento conmigo es diferente... ¿te atreves a descubrirlo? 😈  
+
+        <br><br>
+        <strong>Intereses:</strong> Música, tatuajes, playa, videojuegos 🎮  
+        <br>
+        <strong>Shows:</strong> Temáticos, cosplay, dinámicos ✨  
+        <br>
+        <strong>Horario:</strong> 8pm - 12am (GMT-5) 🌙  
+    </div>
+</div>
+</section>
+
+<!-- GALERÍA -->
+<section id="gallery">
+<h2>Galería 📸</h2>
+<div class="gallery">
+    <img src="DSC09907.jpg">
+    <img src="DSC09965.jpg">
+    <img src="foto2.jpg">
+    <img src="foto3.jpg">
+</div>
+</section>
+
+<!-- METAS -->
+<section id="goals">
+<h2>Metas 🎯</h2>
+<div class="card">
+<div class="list-item">💎 1000 tk → Show GTA 🔥</div>
+<div class="list-item">🔥 2500 tk → Cosplay especial</div>
+<div class="list-item">🚗 5000 tk → VIP session</div>
+</div>
+</section>
+
+<!-- TIPPERS -->
+<section id="tippers">
+<h2>Top Tippers 💸</h2>
+<div class="card">
+<div class="list-item">🥇 mjetz — 30,000 tk</div>
+<div class="list-item">🥈 simplyhuge66 — 15,000 tk</div>
+<div class="list-item">🥉 the_everlasting_gobstopper — 14,000 tk</div>
+<div class="list-item">💎 johnnyboiyo — 8,000 tk</div>
+<div class="list-item">🔥 sjlippin — 7,000 tk</div>
+<div class="list-item">bigguy9391 — 5,000 tk</div>
+<div class="list-item">aaron362272 — 4,000 tk</div>
+<div class="list-item">nathan6_5 — 4,000 tk</div>
+<div class="list-item">pokerjames69 — 3,000 tk</div>
+</div>
+</section>
+
+<!-- REDES -->
+<section id="social">
+<h2>Redes</h2>
+<div class="social">
+<i class="fab fa-instagram"></i>
+<i class="fab fa-twitter"></i>
+<i class="fab fa-tiktok"></i>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+© 2026 TiinyAngel | Estilo GTA V Moderno | Todos los derechos reservados
+</footer>
+
+<script>
+/* ANIMACIÓN SCROLL */
+const sections = document.querySelectorAll("section");
+window.addEventListener("scroll", () => {
+    sections.forEach(sec => {
+        if(window.scrollY > sec.offsetTop - 300){
+            sec.classList.add("visible");
+        }
+    });
+});
+</script>
+
+</body>
+</html>
